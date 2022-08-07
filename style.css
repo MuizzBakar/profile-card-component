@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg),
+    var(--Dark-cyan);
+  background-size: 600px, 600px;
+  background-position: -5% -100%, 105% 250%;
+  background-repeat: no-repeat;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  background: url(images/bg-pattern-card.svg) white;
+  background-repeat: no-repeat;
+  width: 350px;
+  border-radius: 20px;
+  margin: 180px auto;
+}
+
+.profile-img img {
+  border-radius: 50%;
+  border: 5px solid white;
+  margin: 85px 32% 10px;
+}
+
+p {
+  color: var(--Dark-gray);
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-name h1 {
+  color: var(--Very-dark-desaturated-blue);
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.location {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.horizontal {
+  border-bottom: 1px solid var(--Dark-gray);
+  margin-bottom: 25px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.stats h2 {
+  color: var(--Very-dark-desaturated-blue);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+}
+
+.stats p {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
